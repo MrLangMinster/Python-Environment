@@ -1,0 +1,20 @@
+{
+    "name": "Python 3 Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python3",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000
+    },
+    "extensions": [
+       "ms-toolsai.jupyter",
+	"esbenp.prettier-vscode",
+	"formulahendry.code-runner",
+	"usernamehw.errorlens"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt"
+    
+}
